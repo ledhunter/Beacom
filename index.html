@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beacom Connect</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/beacom.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <div class="logo"></div>
+            <div class="ii-cont1">
+                <div class="ii-cont2">
+                    <div class="ii"></div>
+                    Интернет
+                </div>
+            </div>
+        </div>
+        <div class="cont-form">
+            <div class="blok1">
+                <div class="blok1-p-b">
+                    <a class="rebut" herf="#"></a>
+                    <a class="save" herf="#"></a>
+                </div>
+            </div>
+            <div class="blok2">
+                <div class="speed">
+                    <div class="speed-down">
+                        <p>Входящая скорость : <b>3Kbit/s</b></p>
+                    </div>
+                    <div class="speed-down">
+                        <p>Входящая трафик : <b>128Kbit/s</b></p>
+                    </div>
+                </div>
+                <div class="speed">
+                    <div class="speed-up">
+                        <p>Исходящая скорость : <b>2Kbit/s</b></p>
+                    </div>
+                    <div class="speed-up">
+                        <p>Исходящий трафик : <b>28Kbit/s</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="blok3">
+                <div class="cont">
+                    <h4 onclick="open1()">Настройка интернет подключения</h4>
+                    <div class="tw" id="blok3-false">
+                        <div class="type">
+                            <p>Тип подключения <b>DHCP</b></p>
+                            <div class="wan">
+                                <div class="wan-of"></div>
+                                <p>Беспроводной WAN <b>60</b> SSID обнаружены</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tw" id="blok3-true">
+                        <div class="type">
+                            <p>Тип подключения <b>DHCP</b></p>
+                            <details id="d1">
+                                <summary id="sump1">
+                                    <p>DHCP</p>
+                                </summary>
+                                <ul id="ul1">
+                                    <li onclick="select(this.innerHTML)">
+                                        <p>DHCP1</p>
+                                    </li>
+                                    <li onclick="select(this.innerHTML)">
+                                        <p>DHCP2</p>
+                                    </li>
+                                    <li onclick="select(this.innerHTML)">
+                                        <p>DHCP3</p>
+                                    </li>
+                                </ul>
+                            </details>
+                        </div>
+                        <div class="wan">
+                            <div class="wan-of"></div>
+                            <p id="step2">Беспроводной WAN</p>
+                            <details id="d2">
+                                <summary id="sump2">
+                                    <p><b>60</b> SSID обнаружены</p>
+                                </summary>
+                                <ul>
+                                    <li onclick="select2(this.innerHTML)">
+                                        <a class="fa"></a>
+                                        <p>Enternet</p>
+                                        <p>
+                                            <b class="speed-down">30</b>
+                                            <b class="speed-up">5  Kbit/s</b>
+                                        </p>
+                                    </li>
+                                    <li onclick="select2(this.innerHTML)">
+                                        <a class="fa"></a>
+                                        <p>PR10000239</p>
+                                        <p>
+                                            <b class="speed-down">23</b>
+                                            <b class="speed-up">5  Kbit/s</b>
+                                        </p>
+                                    </li>
+                                    <li onclick="select2(this.innerHTML)">
+                                        <a class="fa"></a>
+                                        <p>Leninskii12</p>
+                                        <p>
+                                            <b class="speed-down">10</b>
+                                            <b class="speed-up">5  Kbit/s</b>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="menu-punkt">
+                    <a>Help / Support</a>
+                </div>
+                <div class="menu-punkt">
+                    <a>Instructions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
